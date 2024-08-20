@@ -14,6 +14,10 @@ function loop()
 		if(sacrificeAmount > 2) sacrifice.click();
 	}
 	
+	//click "buy max" button of the tickspeed upgrade
+	buymax = document.getElementsByClassName("tickspeed-max-btn")[0];
+	if(isClickable(buymax)) buymax.click();
+	
 	rst = document.getElementsByClassName("o-primary-btn--dimension-reset")[0];
 	dim = document.getElementsByClassName("o-primary-btn--dimension-reset")[1]; 
 	
