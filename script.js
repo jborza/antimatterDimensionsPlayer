@@ -3,7 +3,12 @@ function loop()
 	//big reset, click it
 	bigReset = document.getElementsByClassName("btn-big-crunch");
 	if(bigReset.length == 1){
-		if(isClickable(bigReset[0])) bigReset[0].click();
+		if(isClickable(bigReset[0])) 
+		{
+			bigReset[0].click();
+			setTimeout(loop, 1000);
+			return;
+		}
 	}
 
 	//dimensional sacrifice, click if greater than a threshold
